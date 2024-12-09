@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 227, 227);
+    width: 100%;
+    height: 100vh;
+    display: ruby;
+    justify-content: center;
+}
+
+.note{
+    width: 300px;
+    height: -webkit-fill-available;
+    min-height: 300px;
+    background-color: white;
+    margin: 50px 30px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.addNote{
+    cursor: pointer;
+    background-color: rgb(50, 164, 32);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 0 30px 30px rgba(11, 234, 119, 0.088);
+}
+
+.note .options{
+    background-color: rgb(50, 164, 32);
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.note .options .edit,
+.note .options .delete{
+    color: aliceblue;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.note textarea,
+.note .message
+{
+    width: -webkit-fill-available;
+    min-height: 300px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+
+.note textarea.hidden,
+.note .message.hidden
+{
+    display: none;
+}
+
+.note textarea{
+    font-size: 18px;
+}
